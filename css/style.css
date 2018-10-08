@@ -9,5 +9,10 @@ body{
 }
 .header-style{
   margin: auto 35px;
+}
+#a-header-style{
   text-decoration: none;
+  font-size: 14px;
+  color:#5f6368;
+  font-family: arial;
 }
