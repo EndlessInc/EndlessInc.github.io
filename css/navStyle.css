@@ -13,7 +13,7 @@ body{
 .nav{
   display: inline-flex;
   margin: 0 auto;
-  width:1000px;
+  width:1200px;
 }
 .nav-logo{
   height:65px;
@@ -50,31 +50,52 @@ body{
 }
 #a0:hover{
   /*background-color: #ebebeb;*/
+  color:black;
   border-bottom: 4px solid #00c8aa;
   transition: border-bottom 0.25s ;
 }
 #a1:hover{
   /*background-color: #ebebeb;*/
+  color:black;
   border-bottom: 4px solid #38A6B9;
   transition: border-bottom 0.25s ;
 }
 #a2:hover{
   /*background-color: #ebebeb;*/
+  color:black;
   border-bottom: 4px solid #C84EDF;
   transition: border-bottom 0.25s ;
 }
 #a3:hover{
   /*background-color: #ebebeb;*/
+  color:black;
   border-bottom: 4px solid #F334EA;
   transition: border-bottom 0.25s ;
 }
 .nav-menu-a:visited{
   /*background-color: #ebebeb;*/
   border-bottom: 4px solid #00c8aa;
-
-
 }
 .nav-logo-a{
   text-decoration: none;
   color: black;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5f6368;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3d4042;
+
 }
