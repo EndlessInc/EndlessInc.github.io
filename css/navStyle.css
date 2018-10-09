@@ -19,11 +19,12 @@ body{
   display: inline-flex;
 }
 .logo{
-  height:35px;
+  height:30px;
   margin: auto 10px;
 }
 .nav-logo-text{
-  font-family: arial;
+/*  font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
 
 
@@ -42,12 +43,28 @@ body{
   text-decoration: none;
   color: #5f6368;
   font-size: 14px;
-  font-family: arial;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
 
 }
-.nav-menu-a:hover{
+#a0:hover{
   /*background-color: #ebebeb;*/
   border-bottom: 4px solid #00c8aa;
+  transition: border-bottom 0.25s ;
+}
+#a1:hover{
+  /*background-color: #ebebeb;*/
+  border-bottom: 4px solid #38A6B9;
+  transition: border-bottom 0.25s ;
+}
+#a2:hover{
+  /*background-color: #ebebeb;*/
+  border-bottom: 4px solid #C84EDF;
+  transition: border-bottom 0.25s ;
+}
+#a3:hover{
+  /*background-color: #ebebeb;*/
+  border-bottom: 4px solid #F334EA;
   transition: border-bottom 0.25s ;
 }
 .nav-menu-a:visited{

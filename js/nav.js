@@ -7,7 +7,7 @@ window.addEventListener("scroll", function(){
    header = document.getElementById('header');
    var	ypos = window.pageYOffset;
 
-   if (ypos > 150 ){
+   if (ypos > 200 ){
     if (st > lastScrollTop){
        //downscroll
         header.style.margin="-70px 0";
