@@ -6,7 +6,7 @@ body{
   position: fixed;
   height:65px;
   width: 100%;
-  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.15);
   display: flex;
   z-index: 1;
 }
@@ -91,11 +91,11 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #5f6368;
+    background: #e6e6e6;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #3d4042;
+    background: #c9c9c9;
 
 }
