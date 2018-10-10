@@ -1,14 +1,19 @@
 body{
   margin: 0;
+  height: 1000000px;
+  /*background-color: black;*/
 }
 #header{
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.35);
   position: fixed;
+  top:0;
   height:65px;
   width: 100%;
-  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.45);
   display: flex;
-  z-index: 1;
+  z-index: 2;
+  transition: margin 0.35s, background-color 0.35s;
+  
 }
 .nav{
   display: inline-flex;
@@ -23,10 +28,12 @@ body{
   height:30px;
   margin: auto 10px;
 }
-.nav-logo-text{
+#nav-logo-text{
 /*  font-family: 'Montserrat', sans-serif;*/
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  color: white /*black*/;
+  transition: color 0.35s;
 
 
 }
@@ -42,7 +49,7 @@ body{
 .nav-menu-a{
   padding: calc((65px - 16.8px)/2) 10px;
   text-decoration: none;
-  color: #5f6368;
+  color: /*#5f6368*/ white;
   font-size: 14px;
   /*font-family: 'Montserrat', sans-serif;*/
   font-family: 'Raleway', sans-serif;
@@ -50,32 +57,25 @@ body{
 }
 #a0:hover{
   /*background-color: #ebebeb;*/
-  color:black;
   border-bottom: 4px solid #00c8aa;
   transition: border-bottom 0.25s ;
 }
 #a1:hover{
   /*background-color: #ebebeb;*/
-  color:black;
   border-bottom: 4px solid #38A6B9;
   transition: border-bottom 0.25s ;
 }
 #a2:hover{
   /*background-color: #ebebeb;*/
-  color:black;
   border-bottom: 4px solid #C84EDF;
   transition: border-bottom 0.25s ;
 }
 #a3:hover{
   /*background-color: #ebebeb;*/
-  color:black;
   border-bottom: 4px solid #F334EA;
   transition: border-bottom 0.25s ;
 }
-.nav-menu-a:visited{
-  /*background-color: #ebebeb;*/
-  border-bottom: 4px solid #00c8aa;
-}
+
 .nav-logo-a{
   text-decoration: none;
   color: black;
