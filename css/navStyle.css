@@ -1,7 +1,5 @@
 body{
   margin: 0;
-  height: 1000000px;
-  /*background-color: black;*/
 }
 #header{
   background-color: rgba(0, 0, 0, 0.35);
@@ -81,21 +79,4 @@ body{
   color: black;
 }
 ::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #ffffff;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #e6e6e6;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #c9c9c9;
-
-}
+    width: 0;

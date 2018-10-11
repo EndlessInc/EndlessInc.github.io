@@ -1,3 +1,4 @@
+
 .video-container{
 position: absolute;
   top: 0;
@@ -28,6 +29,25 @@ position: absolute;
 	transform: translate(-50%, -50%);
 	z-index: 1;
 }
+.overlay-button{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+#scroll-button{
+	background-image: url(../img/down-arrow.png);
+	height: 50px;
+	width: 50px;
+	background-color:transparent;
+	border: none;
+	text-align: center;
+    text-decoration: none;
+    
+}
 .m-text{
 	
 	
@@ -52,13 +72,13 @@ position: absolute;
 	text-shadow: 2px 5px rgba(0, 0, 0, 0.45);
 }
 
-.content{
+.content-wbg{
 	-webkit-box-shadow:inset 0px 0px 0px 10px #f00;
     -moz-box-shadow:inset 0px 0px 0px 10px #f00;
     box-shadow:inset 0 5px 13px rgba(0, 0, 0, 0.95);
-	background-image: url("../img/bg-img.png");
+	background-image: url("../img/img.jpg");
+	position: absolute;
 	top:100vh;
-	position: relative;
 	height: 100vh;
 	width: 100%; 
 	z-index: 1;
@@ -67,4 +87,16 @@ position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     color: red;
+}
+.content-nbg{
+	position: absolute;
+	top:200vh;
+	height: 50vh;
+	width: 100%;
+}
+.footer{
+	position: absolute;
+	top:300vh;
+	height: 50vh;
+	width: 100%;
 }
