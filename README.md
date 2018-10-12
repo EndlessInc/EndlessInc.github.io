@@ -8,7 +8,7 @@ The mission of this company is to eradicate gamer boredom. Our product is an Ati
 
 Contributor #1: Hrithik Shah username: CoderHahs 300069290
 
-Contributor #2: 
+Contributor #2: Arunasva Bhuyan username: ArunasvaArunasva 300055811
 
 Contributor #3: 
 
