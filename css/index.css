@@ -1,6 +1,6 @@
 
 .video-container{
-position: absolute;
+  position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
@@ -24,30 +24,18 @@ position: absolute;
 	position: absolute;
 	padding: 0;
 	margin: 0;
-	top: 45%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
 	
 }
-.overlay-button{
-	position: absolute;
-	padding: 0;
-	margin: 0;
-	top: 45%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-}
-#scroll-button{
-	background-image: url(../img/down-arrow.png);
-	height: 50px;
-	width: 50px;
-	background-color:transparent;
-	border: none;
-	text-align: center;
-    text-decoration: none;
-    
+
+
+.m-text-box{
+	border: 5px solid white;
+	margin-bottom: 70px;
+	box-shadow:  2px 2px rgba(0, 0, 0, 0.45);
 }
 .m-text{
 	
@@ -55,12 +43,13 @@ position: absolute;
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	color: white;
+	padding-left: 20px;
 	text-align: center;
 	font-weight: 800;
 	font-size: 70px;
 	letter-spacing: 30px;
-	/*text-shadow: 2px 5px rgba(0, 0, 0, 0.45);*/
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-shadow: 2px 5px rgba(0, 0, 0, 0.45);
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 .s-text{
 	
@@ -71,35 +60,98 @@ position: absolute;
 	font-weight: bold;
 	font-size: 18px;
 	letter-spacing: 10px;
-	/*text-shadow: 2px 1px rgba(0, 0, 0, 0.45);*/
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-shadow: 2px 1px rgba(0, 0, 0, 0.45);
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 
-.content-wbg{
+.content-wbg0{
 	-webkit-box-shadow:inset 0px 0px 0px 10px #f00;
     -moz-box-shadow:inset 0px 0px 0px 10px #f00;
-    box-shadow:inset 0 5px 13px rgba(0, 0, 0, 0.95);
-	background-image: url("../img/img.jpg");
+    box-shadow:inset 0px 0px 13px 3px rgba(0, 0, 0, 0.95);
+	background-image: url("../img/bg-2.jpg");
+	background-color: rgba(0, 0, 0, 0.45);
 	position: absolute;
 	top:100vh;
-	height: 100vh;
+	height: 75vh;
 	width: 100%; 
 	z-index: 1;
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: red;
+    
 }
+.content{
+	
+	width:90vw;
+	height: 50vh;
+	margin: calc(((75vh - 50vh)/2) - 5px)auto;
+	border: 5px solid white;
+	box-shadow:  2px 2px rgba(0, 0, 0, 0.45);
+	
+}
+#sub-p-text{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 10px;
+	letter-spacing: 10px;
+	text-shadow: 2px 1px rgba(0, 0, 0, 0.45);
+}
+#main-p-text{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	margin-top:30px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 26px;
+	letter-spacing: 25px;
+	text-shadow: 2px 1px rgba(0, 0, 0, 0.45);
+}
+#des-text{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	margin-top: 90px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: 20;
+	text-shadow: 2px 1px rgba(0, 0, 0, 0.45);
+}
+/*second box*/
 .content-nbg{
 	position: absolute;
-	top:200vh;
+	top:175vh;
 	height: 50vh;
 	width: 100%;
+	background-color: white;
+}
+/*third box*/
+.content-wbg1{
+	top:225vh;
+	height: 75vh;
+	-webkit-box-shadow:inset 0px 0px 0px 10px #f00;
+    -moz-box-shadow:inset 0px 0px 0px 10px #f00;
+    box-shadow:inset 0 0px 13px 3px rgba(0, 0, 0, 0.95);
+
+	background-image: url("../img/bg-1.jpg");
+	background-color: rgba(0, 0, 0, 0.45);
+	position: absolute;
+	width: 100%; 
+	z-index: 1;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .footer{
 	position: absolute;
 	top:300vh;
 	height: 50vh;
 	width: 100%;
+	background-color:black;
+	
 }
