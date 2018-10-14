@@ -28,10 +28,10 @@ window.addEventListener("scroll", function(){
   if(ypos > 300){
      header.style.backgroundColor="white";
      logo_text.style.color="black";
-     nav_a0.style.color="#5f6368";
-     nav_a1.style.color="#5f6368";
-     nav_a2.style.color="#5f6368";
-     nav_a3.style.color="#5f6368";
+     nav_a0.style.color="black";//"#5f6368"
+     nav_a1.style.color="black";
+     nav_a2.style.color="black";
+     nav_a3.style.color="black";
 
     }
     if(ypos <=696){
