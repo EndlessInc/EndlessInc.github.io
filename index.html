@@ -10,6 +10,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="./js/nav.js"></script>
 		<script src="./js/smooth-scrolling.js"></script>
+		<script src="./js/animations.js"></script>
+		
 		
 	</head>
 
@@ -17,7 +19,7 @@
 		<div id="header">
 			<div class="nav">
 				<a class="nav-logo-a" href="index.html"><div class="nav-logo">
-					<img class="logo" src="./img/logo1.png">
+					<img id="logo" src="./img/logo1.png" onmouseover="animation()" onmouseout="back_to_logo()">
 					<p id="nav-logo-text">Endless</p>
 				</div></a>
 				<div class="nav-menu-wrapper">
@@ -35,16 +37,20 @@
 				</video>
 			</div>
 			<div class="overlay">
-				<dir class="overlay-text">
+				<dir class="overlay-text" id="animate">
 					<div class="m-text-box"><p class="m-text">Endless</p></div>
-					<p class="s-text">Games for you, made for you.<!--Breaking boundaries, The new fashion of gaming--></p>
+					<div class="verticalFlip">
+						<span>Why settle for one?</span>
+						<span>Breaking boundaries</span>
+						<span>The new fashion of gaming</span>
+    				</div>
 				</dir>
 				
 			</div>
 			<div class="content-wbg0">
-				<div class="content">
-					<div style=" margin: calc((50vh - 205px)/2)auto; ">
-						<p id="sub-p-text">Sounds amazing but</p>
+				<div class="content" id="animate">
+					<div style=" margin: calc((397px - 205px)/2)auto; ">
+						<p id="sub-p-text">First thing first</p>
 						<p id="main-p-text">What is it?</p>
 						<p id="des-text">
 							Endless is an artificial intelligence that dynamically generates new games based on your favorite already existing games.
@@ -53,8 +59,8 @@
 				</div>
 			</div>
 			<div class="content-nbg">
-				<div class="content1">
-					<div style="margin: calc((50vh - 205px)/2)auto;">
+				<div class="content1" id="animate">
+					<div style="margin: calc((377px - 205px)/2)auto;">
 						<p id="sub-p-text" style="color:black; text-shadow: none;">With endless possibilities comes</p>
 						<p id="main-p-text" style="color:black; text-shadow: none;">An ambitious mission</p>
 						<p id="des-text" style="color:black; text-shadow: none;">
@@ -64,8 +70,8 @@
 				</div>
 			</div>
 			<div class="content-wbg1">
-				<div class="content">
-					<div style=" margin: calc((50vh - 205px)/2)auto; ">
+				<div class="content" id="animate">
+					<div style=" margin: calc((397px - 205px)/2)auto; ">
 						<p id="main-p-text">Want to know more?</p>
 						<p id="sub-p-text">Follow this link :</p>
 						
@@ -74,7 +80,8 @@
 				</div>	
 			</div>
 			<div class="footer">
-				
+				<div class="footer-content">
+				</div>
 			</div>
 		</div>
 	</body>
