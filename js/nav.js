@@ -1,15 +1,21 @@
+//Code by Mark-Olvier Poulin
+//This code is for all the animation you see in the navigation bar
 var lastScrollTop = 0;
-var header;
-
+//var for logo animation
+var time_on=0;
+var time_out=0;
+var count=0;
+var active=false;
+//scrolling animations
 window.addEventListener("scroll", function(){
 
   var st = window.pageYOffset || document.documentElement.scrollTop;
-  header = document.getElementById('header');
-  logo_text = document.getElementById('nav-logo-text');
-  nav_a0 = document.getElementById('a0');
-  nav_a1 = document.getElementById('a1');
-  nav_a2 = document.getElementById('a2');
-  nav_a3 = document.getElementById('a3');
+  var header = document.getElementById('header');
+  var logo_text = document.getElementById('nav-logo-text');
+  var nav_a0 = document.getElementById('a0');
+  var nav_a1 = document.getElementById('a1');
+  var nav_a2 = document.getElementById('a2');
+  var nav_a3 = document.getElementById('a3');
   var	ypos = window.pageYOffset;
 
   if (ypos > 450 ){
@@ -44,3 +50,32 @@ window.addEventListener("scroll", function(){
     }
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile
   }, false);
+//logo animation on hover and out
+function animation(){
+  if (active==false){
+    logo = document.getElementById('logo');
+    logo.src="./img/animation.gif";
+    time_on=Date.now();
+    active=true;  
+  }
+}
+function back_to_logo(){
+  time_out=Date.now();
+  //keeping track of looping animation
+  count=0;
+  count=3750-(time_out-time_on);
+  if (count>=0){
+    count=3750-(time_out-time_on);
+  }
+  else{
+    diff=(time_out-time_on)
+    reff=Math.round((diff/3750)+0.5);
+    count=(reff*3750)-diff;
+  }
+  //setting timeout witch count
+  setTimeout(function(){
+    logo = document.getElementById('logo');
+    logo.src="./img/logo1.png";
+    active=false;
+    }, count)
+}

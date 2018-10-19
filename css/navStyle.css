@@ -23,7 +23,7 @@ body{
   height:65px;
   display: inline-flex;
 }
-.logo{
+#logo{
   height:30px;
   margin: auto 10px;
 }
