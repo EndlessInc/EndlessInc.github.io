@@ -1,0 +1,10 @@
+.content-wrapper{
+  padding-top:65px;
+}
+.content{
+  position:relative;
+  display: block;
+  width:100%;
+  height: calc(100vh - 65px);
+  background-color:  #f8f7f7;
+}

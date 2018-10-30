@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 
 	<head>
-		<title>Endless Inc.</title>
-		<link href="./css/style.css" rel="stylesheet" type="text/css">
+		<title>Endless | Home</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="./img/ico.ico" />
+		<link href="./css/navStyle.css" rel="stylesheet" type="text/css">
+		<link href="./css/index.css" rel="stylesheet" type="text/css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="./js/nav.js"></script>
+		<script src="./js/smooth-scrolling.js"></script>
+		<script src="./js/animations.js"></script>
+		
+		
 	</head>
 
 	<body>
-		<div class="header">
-			<div class="header-style" id="logo"></div>
-			<div class="header-style" id="about"><a id="a-header-style" href="EndlessInc.github.io/html/about.html">About</a></div>
-			<div class="header-style" id="pricing"><a id="a-header-style" href="EndlessInc.github.io/html/pricing.html">Pricing</a></div>
-			<div class="header-style" id="team"><a id="a-header-style" href="EndlessInc.github.io/html/team.html">Team</a></div>
-			<div class="header-style" id="contact"><a id="a-header-style" href="EndlessInc.github.io/html/contact.html">Contact</a></div>
+		<div id="header">
+			<div class="nav">
+				<a class="nav-logo-a" href="index.html"><div class="nav-logo">
+					<img id="logo" src="./img/logo1.png" onmouseover="animation()" onmouseout="back_to_logo()">
+					<p id="nav-logo-text">Endless</p>
+				</div></a>
+				<div class="nav-menu-wrapper">
+					<a class="nav-menu-a" id="a0" href="./html/About.html">About</a>
+					<a class="nav-menu-a" id="a1" href="./html/Pricing.html">Pricing</a>
+					<a class="nav-menu-a" id="a2" href="./html/Team.html">Team</a>
+					<a class="nav-menu-a" id="a3" href="./html/Contact.html">Contact</a>
+				</div>
+			</div>
+		</div>
+		<div class="content-wrapper">
+			<div class="video-container">
+				<video autoplay muted loop="true" class="bg-video">
+	  				<source src="./img/video.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="overlay">
+				<dir class="overlay-text" id="animate">
+					<div class="m-text-box"><p class="m-text">Endless</p></div>
+					<div class="verticalFlip">
+						<span>Why settle for one?</span>
+						<span>Breaking boundaries</span>
+						<span>The new fashion of gaming</span>
+    				</div>
+				</dir>
+				
+			</div>
+			<div class="content-wbg0">
+				<div class="content" id="animate">
+					<div style=" margin: calc((397px - 205px)/2)auto; ">
+						<p id="sub-p-text">First thing first</p>
+						<p id="main-p-text">What is it?</p>
+						<p id="des-text">
+							Endless is an artificial intelligence that dynamically generates new games based on your favorite already existing games.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="content-nbg">
+				<div class="content1" id="animate">
+					<div style="margin: calc((377px - 205px)/2)auto;">
+						<p id="sub-p-text" style="color:black; text-shadow: none;">With endless possibilities comes</p>
+						<p id="main-p-text" style="color:black; text-shadow: none;">An ambitious mission</p>
+						<p id="des-text" style="color:black; text-shadow: none;">
+							Endless' mission is to eradicate gamers boredom by providing gamers fresh content each time you play.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="content-wbg1">
+				<div class="content" id="animate">
+					<div style=" margin: calc((397px - 205px)/2)auto; ">
+						<p id="main-p-text">Want to know more?</p>
+						<p id="sub-p-text">Follow this link :</p>
+						
+
+					</div>
+				</div>	
+			</div>
+			<div class="footer">
+				<div class="footer-content">
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
