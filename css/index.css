@@ -57,7 +57,7 @@
 	-webkit-box-shadow:inset 0px 0px 0px 10px #f00;
     -moz-box-shadow:inset 0px 0px 0px 10px #f00;
     box-shadow:inset 0px 0px 13px 3px rgba(0, 0, 0, 0.95);
-	background-image: url("../img/bg-2.jpg");
+	background-image: url("../img/bg-3.jpg");
 	background-color: rgba(0, 0, 0, 0.45);
 	position: absolute;
 	top:100vh;
@@ -118,6 +118,25 @@
 	width: 100%;
 	background-color: white;
 }
+#down-arrow{
+  position: fixed;
+  background:white;
+  border-radius:50%;
+  width:65px;
+  height:65px;
+  top: 85%;
+  left:90%;
+  z-index: 2;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.25);
+  background-size: 100%;
+  text-decoration: none;
+  border:none;
+  cursor: pointer;
+  outline: none;
+
+
+}
+
 /*third box*/
 .content-wbg1{
 	top:calc(100vh + 943px);
@@ -126,7 +145,7 @@
     -moz-box-shadow:inset 0px 0px 0px 10px #f00;
     box-shadow:inset 0 1px 13px 3px rgba(0, 0, 0, 0.95);
 
-	background-image: url("../img/bg-1.jpg");
+	background-image: url("../img/bg-4.jpg");
 	background-color: rgba(0, 0, 0, 0.45);
 	position: absolute;
 	width: 100%; 
