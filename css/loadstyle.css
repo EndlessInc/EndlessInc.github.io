@@ -1,0 +1,17 @@
+.nav-logo{
+  height:65px;
+  display: inline-flex;
+}
+#logo{
+  height:30px;
+  margin: auto 10px;
+}
+#nav-logo-text{
+/*  font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: white /*black*/;
+  transition: color 0.35s;
+
+
+}
