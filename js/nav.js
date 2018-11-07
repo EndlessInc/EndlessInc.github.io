@@ -49,7 +49,9 @@ window.addEventListener("scroll", function(){
        nav_a3.style.color="white";
     }
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile
-  }, false);
+}, false);
+
+
 //logo animation on hover and out
 function animation(){
   if (active==false){

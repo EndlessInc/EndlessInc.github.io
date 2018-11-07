@@ -1,16 +1,22 @@
 $(document).ready(function(){
-var position = $(window).scrollTop();
-var	img = document.getElementById('#arrow_img');
+
+if ($("#c-arrow").position(top)>=5){
+	$("#c-arrow").attr("href", "third");
+}
+/*var position = $(window).scrollTop();
 
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
   if (scroll > position) {
     console.log("scrolling downwards");
-    img.style.color="rotate(180)";
+   	
   } else {
     console.log("scrolling upwards");
-    img.style.color="rotate(180)";
+ 
   }
   position = scroll;
-});
+});*/
+
+
+
 })
