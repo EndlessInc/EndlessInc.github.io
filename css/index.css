@@ -12,8 +12,8 @@
 }
 .bg-img{
 	position: relative;
-	height: 202px;
-	width: 333px;
+	height: 189px;
+	width: 300px;
 	margin: 2px;
 	filter:blur(5px) brightness(80%);
 	display: inline-block;
