@@ -41,8 +41,9 @@ window.addEventListener("scroll", function(){
       c_arrow.style.borderRight="2px #fff solid";
 
      }
-  
-  if(ypos >= 1600){
+ 
+  if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+      $(window).unbind('scroll');
       c_arrow.style.transform="rotate(-135deg)";
       c_arrow.setAttribute("href", "#zero");
      

@@ -215,8 +215,8 @@
 /*arrow on the side*/
 #c-arrow{
   position: fixed;
-  top: 94%;
-  left:97% ;
+  top: calc(100% - 50px);
+  left:97%;
   z-index: 2;
   text-decoration: none;
   width: 20px;
