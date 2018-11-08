@@ -5,12 +5,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 		<link rel="icon" type="image/x-icon" href="./img/ico.ico" />
 		<link href="./css/navStyle.css" rel="stylesheet" type="text/css">
+		<link href="./css/footerStyle.css" rel="stylesheet" type="text/css">
 		<link href="./css/index.css" rel="stylesheet" type="text/css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="./js/nav.js"></script>
 		<script src="./js/smooth-scrolling.js"></script>
-		<script src="./js/animations.js"></script>
+		<script src="./js/index-animations.js"></script>
 		
 		
 		
@@ -33,7 +34,7 @@
 			</div>
 		</div>
 		<div class="content-wrapper">
-			<div class="top-container">
+			<div class="top-container" id="zero">
 				<div class="img-container" >
 					<img src="./img/game_titles/1.jpg" class="bg-img">
 					<img src="./img/game_titles/2.jpg" class="bg-img">
@@ -65,8 +66,8 @@
 							<span>Breaking boundaries</span>
 							<span>The new fashion of gaming</span>
 	    				</div>
-					</dir>
-					<a href="./html/Pricing.html" class="gt-link">Get started</a>
+					</div>
+					<a href="./html/Pricing.html" class="p-link">Get started</a>
 					<a class="f-arrow" href="#first"></a>
 				</div>
 			
@@ -101,31 +102,37 @@
 					<div style=" margin: calc((397px - 205px)/2)auto; ">
 						<p id="main-p-text">Want to know more?</p>
 						<p id="sub-p-text">Follow this link :</p>
+						<a href="./html/About.html" class="a-link">About</a>
 					</div>
+
 				</div>	
 			</div>
 
-			<div class="footer" id="fourth">
-				<div class="footer-content">
-					<a class="nav-logo-a" href="index.html"><div class="nav-logo">
-						
+			<div class="footer">
+				<div class="f-nav">
+					<a class="footer-logo-a" href="#"><div class="footer-logo">
+						<img id="logo" src="./img/logo1.png">
+						<p id="footer-logo-text">Copyright © Endless Inc. 2018</p>
 					</div></a>
+					<div class="footer-menu-wrapper">
+						<a class="nav-menu-a" id="a0" href="#">Terms and conditions</a>
+						<a class="nav-menu-a" id="a1" href="#">Privacy policy</a>
+						<a class="nav-menu-a" id="a2" href="https://www.instagram.com/marko_poulin/?hl=fr-ca"><img src="./img/instagram.png" style="height: 30px; width:30px; margin:-10px 2px;"></a>
+						<a class="nav-menu-a" id="a3" href="#"><img src="./img/fb.png" style="height: 30px; width:30px; margin:-10px 2px;" ></a>
+						<a class="nav-menu-a" id="a4" href="#"><img src="./img/twitter.png" style="height: 30px; width:30px; margin:-10px 2px;" ></a>
+					</div>
 				</div>
 			</div>
-
 		</div>
 		<script>
-					$('a[href*="#"]')
-		  // Remove links that don't actually link to anything
+			$('a[href*="#"]')
+	
 		  .not('[href="#"]')
 		  .not('[href="#0"]')
 		  .click(function(event) {
-		    // On-page links
+		  
 		    if (
-		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-		      && 
-		      location.hostname == this.hostname
-		    ) {
+		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 		      // Figure out element to scroll to
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -153,4 +160,3 @@
 		</script>
 	</body>
 </html>
-<!--comment -->

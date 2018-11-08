@@ -1,4 +1,4 @@
-
+/*bg img*/
 .img-container{
   position: absolute;
   top: 0;
@@ -12,8 +12,8 @@
 }
 .bg-img{
 	position: relative;
-	height: 202px;
-	width: 333px;
+	height: calc(25% - 7.5px);
+	width: calc(20% - 7.5px);
 	margin: 2px;
 	filter:blur(5px) brightness(80%);
 	display: inline-block;
@@ -25,6 +25,7 @@
 	box-shadow:  20px 20px rgba(0, 0, 0, 0.45); 
 
 }
+/*overlay text*/
 .overlay-text{
 	position: absolute;
 	padding: 0;
@@ -35,8 +36,6 @@
 	z-index: 4;
 	
 }
-
-
 .m-text-box{
 	border: 5px solid white;
 	margin-bottom: 50px;
@@ -56,7 +55,7 @@
 	text-shadow: 2px 5px rgba(0, 0, 0, 0.45);
 	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
-.gt-link{
+.p-link{
 	position: absolute;
 	top: 73%;
 	left: calc(50% - 120px);
@@ -75,8 +74,29 @@
     text-shadow: 2px 1px rgba(0, 0, 0, 0.45);
     transition: 0.2s;
 }
-.gt-link:hover{
+.p-link:hover{
 	box-shadow:  8px 8px 6px 0px rgba(0, 0, 0, 0.45);
+}
+.a-link{
+	margin: 70px auto;
+	display: block;
+	width:72px;
+	border: 2px solid white;
+	padding: 20px 30px 20px 30px;
+	border-radius: 2px;
+	text-decoration: none;
+	color:white;
+	font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.45);
+    transition: 0.2s;
+}
+.a-link:hover{
+	box-shadow:  8px 8px 5px 0px rgba(0, 0, 0, 0.45);
 }
 .content-wbg0{
 	-webkit-box-shadow:inset 0px 0px 0px 10px #f00;
@@ -95,6 +115,9 @@
     background-size: cover;
     
     
+}
+.content-wbg0:focus{
+	outline: none;
 }
 .content{
 	
@@ -192,7 +215,7 @@
 /*arrow on the side*/
 #c-arrow{
   position: fixed;
-  top: 92%;
+  top: 94%;
   left:97% ;
   z-index: 2;
   text-decoration: none;
@@ -206,67 +229,8 @@
   background-color: transparent;
   cursor: pointer;
   outline: none;
+  transition: transform 0.7s ease;
  
-}
-.left-bar {
-  position: absolute;
-  background-color: white;
-  float: left;
-  top:50%;
-  left: 6px;
-  width: 30px;
-  height: 3px;
-  display: block;
-  transform: rotate(35deg);
-  border-radius: 2px;
-  &:after {
-    content:"";
-    background-color: white;
-    width: 40px;
-    height: 10px;
-    display: block;
-    float: right;
-    border-radius: 6px 10px 10px 6px;
-    transition: all $duration $easing;
-    z-index: -1;
-  }
-}
-
-.right-bar {
-  position: absolute;
-  background-color: white;
-  float: right;
-  top:50%;
-  right: 6px;
-  width: 30px;
-  height: 3px;
-  display: block;
-  transform: rotate(-35deg);
-  box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  &:after {
-    content:"";
-    background-color: white;
-    width: 40px;
-    height: 10px;
-    display: block;
-    float: right;
-    border-radius: 10px 6px 6px 10px;
-    transition: all $duration $easing;
-    z-index: -1;
-  }
-}
-
-.open {
-    .left-bar:after {
-    transform-origin: center center;
-    transform: rotate(-70deg);
-  }
-  .right-bar:after {
-    transform-origin: center center;
-    transform: rotate(70deg);
-  }
-
 }
 /*third box*/
 .content-wbg1{
@@ -286,13 +250,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.footer-content{
-	position: absolute;
-	top:calc(100vh + 1509px);
-	height: 100px;
-	width: 100%;
-	background-color:black;
-	
+.content-wbg1:focus{
+	outline: none;
 }
 /*text animation*/
 .verticalFlip{
@@ -328,10 +287,6 @@
 	-ms-animation-delay: 10s;
 	-webkit-animation-delay: 10s;
 }
-
-
-
-
 /*Vertical Flip Animation*/
 @-moz-keyframes vertical{
 	0% { opacity: 0; }

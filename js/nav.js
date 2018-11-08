@@ -1,12 +1,14 @@
 //Code by Mark-Olvier Poulin
-//This code is for all the animation you see in the navigation bar
-var lastScrollTop = 0;
+//This code is for all the animation you see in the navigation bar as well as the navigation of the home page
 //var for logo animation
 var time_on=0;
 var time_out=0;
 var count=0;
 var active=false;
+$(document).ready(function(){
+var lastScrollTop = 0;
 //scrolling animations
+
 window.addEventListener("scroll", function(){
 
   var st = window.pageYOffset || document.documentElement.scrollTop;
@@ -21,16 +23,16 @@ window.addEventListener("scroll", function(){
   if (ypos > 450 ){
 
 
-  if (st > lastScrollTop){
-      //downscroll
-      header.style.margin="-70px 0";
-
-    }
-    else {
-      // upscroll
-      header.style.margin="0";
-     }
+    if (st > lastScrollTop){
+        //downscroll
+        header.style.margin="-70px 0";
+      }
+      else {
+        // upscroll
+        header.style.margin="0";
+       }
   }
+  
   if(ypos > 300){
      header.style.backgroundColor="white";
      logo_text.style.color="black";
@@ -40,18 +42,19 @@ window.addEventListener("scroll", function(){
      nav_a3.style.color="black";
 
     }
-    if(ypos <=696){
+  if(ypos <=696){
        header.style.backgroundColor="rgba(0, 0, 0, 0.35)";
        logo_text.style.color="white";
        nav_a0.style.color="white";
        nav_a1.style.color="white";
        nav_a2.style.color="white";
        nav_a3.style.color="white";
-    }
+  }
+
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile
 }, false);
 
-
+})
 //logo animation on hover and out
 function animation(){
   if (active==false){
