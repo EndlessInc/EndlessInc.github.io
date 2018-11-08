@@ -44,7 +44,7 @@ window.addEventListener("scroll", function(){
   
   if(ypos >= 1600){
       c_arrow.style.transform="rotate(-135deg)";
-      c_arrow.setAttribute("href", "#second");
+      c_arrow.setAttribute("href", "#zero");
      
   }
 
@@ -60,7 +60,7 @@ window.addEventListener("scroll", function(){
   if(ypos > 850 && ypos <= 1300 && up==true){
     c_arrow.setAttribute("href", "#first");
   }
-  if(ypos >= 1300 && ypos < 1600 && up==false){
+  if(ypos >= 997 && ypos < 1600 && up==false){
     c_arrow.setAttribute("href", "#third");
   }
   if(ypos > 1300 && ypos < 1600 && up==true){
