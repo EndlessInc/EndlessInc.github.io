@@ -34,10 +34,8 @@
   margin: 0 10px 0 auto;
 }
 
-.nav-menu-object{
-  position: relative;
-}
-.nav-menu-a{
+
+.footer-menu-a{
   padding: calc((100px - 16.8px)/2) 10px;
   text-decoration: none;
   color: /*#5f6368*/ white;
