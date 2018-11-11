@@ -46,6 +46,8 @@ window.addEventListener("scroll", function(){
       $(window).unbind('scroll');
       c_arrow.style.transform="rotate(-135deg)";
       c_arrow.setAttribute("href", "#zero");
+      c_arrow.style.borderBottom="2px white solid";
+      c_arrow.style.borderRight="2px white solid";
       up=true;
      
   }
