@@ -7,9 +7,9 @@ $(document).ready(function(){
 var lastScrollTop = 0;
 var up=false;
 $('#animate1').hide();
-$('#animate1').fadeIn();
 $('#animate2').hide();
 $('#animate3').hide();
+$('#animate1').fadeIn();
 
 window.addEventListener("scroll", function(){
 
@@ -17,18 +17,17 @@ window.addEventListener("scroll", function(){
   var c_arrow= document.getElementById("c-arrow");
   var	ypos = window.pageYOffset;
 
- 
-
-
     if (st > lastScrollTop){
         //downscroll
         c_arrow.style.transform="rotate(45deg)";
         up=false;
+        console.log(ypos);
     }
     else {
       // upscroll
       c_arrow.style.transform="rotate(-135deg)";
       up=true;
+       console.log(ypos);
      }
   
   if (ypos > 550 && ypos < 1050 || ypos>=0 && ypos<63){
@@ -46,36 +45,42 @@ window.addEventListener("scroll", function(){
   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
       $(window).unbind('scroll');
       c_arrow.style.transform="rotate(-135deg)";
-      c_arrow.setAttribute("href", "#first");
+      c_arrow.setAttribute("href", "#zero");
+      up=true;
      
   }
+  if (ypos < 63){
+    c_arrow.style.transform="rotate(45deg)";
+    c_arrow.setAttribute("href", "#first");
+    up=false;
+  }
 
-  if(ypos >= 75 && ypos <= 620 && up==false){
+  if(ypos >= 0 && ypos <= 63 && up==false){
     c_arrow.setAttribute("href", "#first"); 
   }
-  if(ypos >= 75 && ypos <= 850 && up==true){
+  if(ypos >= 0 && ypos <= 650 && up==true){
     c_arrow.setAttribute("href", "#zero");
   }
-  if(ypos >= 620 && ypos <= 997 && up==false){
+  if(ypos >= 63 && ypos <= 538 && up==false){
     c_arrow.setAttribute("href", "#second");
   }
-  if(ypos > 850 && ypos <= 1300 && up==true){
+  if(ypos > 650 && ypos <= 900 && up==true){
     c_arrow.setAttribute("href", "#first");
   }
-  if(ypos >= 997 && ypos < 1600 && up==false){
+  if(ypos >= 538 && ypos < 950 && up==false){
     c_arrow.setAttribute("href", "#third");
   }
-  if(ypos > 1300 && ypos < 1600 && up==true){
-    c_arrow.setAttribute("href", "#first");
+  if(ypos > 900 && ypos < 1000 && up==true){
+    c_arrow.setAttribute("href", "#second");
   }
 
   if (st > lastScrollTop || st < lastScrollTop){
         //scroll detection
      
-         if(ypos >= 2020){
+         if(ypos >= 200){
           $('#animate2').fadeIn();
         }
-         if(ypos >= 1200){
+         if(ypos >= 700){
           $('#animate3').fadeIn();
         }
     }

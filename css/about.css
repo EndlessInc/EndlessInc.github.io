@@ -23,7 +23,7 @@
   min-height: 100%;
   width: auto;
   height: auto;
-  filter:blur(9px) brightness(40%);
+  filter:blur(20px) brightness(40%);
 
 
   /* Center the video */
@@ -56,10 +56,12 @@
 .item-container{
 	display: inline-flex;
 	height: 377px;
+	width: auto;
+	margin: auto 100px auto 100px;
 }
 .text-container{
 	width: 50%;
-	margin:auto 50px auto 100px; 
+	margin:auto 50px auto 0px; 
 }
 #sub-p-text{
 	color:black;
@@ -97,7 +99,7 @@
 	z-index: 1;
 }
 .yt-video-container{
-	margin: calc((377px  - 300px)/2) 100px calc((377px  - 300px)/2) auto;
+	margin: calc((377px  - 310px)/2) 0px calc((377px  - 310px)/2) auto;
 }
 
 .yt-video{
@@ -123,6 +125,9 @@
     background-repeat: no-repeat;
     background-size: cover;
  
+}
+.content-wbg1:focus{
+	outline: none;
 }
 .content{
 	
