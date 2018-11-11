@@ -84,3 +84,31 @@ function back_to_logo(){
     active=false;
     }, count)
 }
+function a_animation(){
+  if (active==false){
+    logo = document.getElementById('logo');
+    logo.src="../img/animation.gif";
+    time_on=Date.now();
+    active=true;  
+  }
+}
+function a_back_to_logo(){
+  time_out=Date.now();
+  //keeping track of looping animation
+  count=0;
+  count=3750-(time_out-time_on);
+  if (count>=0){
+    count=3750-(time_out-time_on);
+  }
+  else{
+    diff=(time_out-time_on)
+    reff=Math.round((diff/3750)+0.5);
+    count=(reff*3750)-diff;
+  }
+  //setting timeout witch count
+  setTimeout(function(){
+    logo = document.getElementById('logo');
+    logo.src="../img/logo1.png";
+    active=false;
+    }, count)
+}

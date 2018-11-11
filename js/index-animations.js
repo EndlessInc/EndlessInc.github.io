@@ -16,8 +16,8 @@ window.addEventListener("scroll", function(){
   var c_arrow= document.getElementById("c-arrow");
   var	ypos = window.pageYOffset;
 
-  if (ypos >= 75 ){
-
+ 
+if (ypos >= 75 ){
 
     if (st > lastScrollTop){
         //downscroll
