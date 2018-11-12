@@ -1,0 +1,47 @@
+* {box-sizing: border-box;}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+}
+
+.preload {
+	width: 100%;
+	height: 100%;
+	background: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.loader-frame {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 575px;
+    margin-inline-end: 0px;
+    width: 300px;
+	height: 70px;
+	margin: 150px auto 50px auto;
+	font-size: 50px;
+	text-shadow: -1px 2px 2px #000;
+	text-align: center;
+
+}
+
+.loader1 {
+	position: absolute;
+	border: 5px solid transparent;
+	border-radius: 50%
+	height: 30px;
+	width: 0px;
+    margin: auto 10px;
+}
+
+
+
+@keyframes fadeout {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
