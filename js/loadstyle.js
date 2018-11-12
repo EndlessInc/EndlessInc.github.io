@@ -8,7 +8,17 @@ var count=0;
 var active=false;
 //scrolling animations
 window.addEventListener("scroll", function(){
+$(document).ready(function (){
+  $(document).load(function(){
+    if (active==false){
+    logo = document.getElementById('logo');
+    logo.src="../img/animation.gif";
+    time_on=Date.now();
+    active=true;  
 
+  }
+  })
+})
   /*var st = window.pageYOffset || document.documentElement.scrollTop;
   var header = document.getElementById('header');
   var logo_text = document.getElementById('nav-logo-text');
