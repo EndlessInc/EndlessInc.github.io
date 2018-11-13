@@ -1,6 +1,4 @@
 
-
-/*Content for background */
 .content-wbg0{
 	background-color: rgba(0, 0, 0, 0.45);
 	position: absolute;
@@ -142,7 +140,7 @@
 }
 .p-link{
 	position: absolute;
-	top: 70%;
+	top: 65%;
 	left: calc(50% - 120px);
 	z-index: 4;
 	border: 2px solid white;

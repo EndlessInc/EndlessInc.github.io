@@ -1,15 +1,15 @@
 
 
 //Code by Mark-Olvier Poulin
-//This code is for all the animations you see in the home page.
+//This code is for all the animations you see in the home page
 
 $(document).ready(function(){
 var lastScrollTop = 0;
 var up=false;
-$('#animate1').hide();
+
 $('#animate2').hide();
 $('#animate3').hide();
-$('#animate1').fadeIn();
+
 
 window.addEventListener("scroll", function(){
 
@@ -54,6 +54,7 @@ window.addEventListener("scroll", function(){
   if (ypos < 63){
     c_arrow.style.transform="rotate(45deg)";
     c_arrow.setAttribute("href", "#first");
+
     up=false;
   }
 
