@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 
 	<head>
+		
+		<meta name="keywords" content="Dynamic game generator">
+		<meta name="description" content="SEG 2900 project">
 		<title>Endless | About</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
-		<link rel="icon" type="image/x-icon" href="./img/ico.ico" />
+		<link rel="icon" type="image/x-icon" href="../img/ico.ico" />
 		<link href="../css/navStyle.css" rel="stylesheet" type="text/css">
-		<link href="../css/index.css" rel="stylesheet" type="text/css">
+		<link href="../css/footerStyle.css" rel="stylesheet" type="text/css">
+		<link href="../css/about.css" rel="stylesheet" type="text/css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
 		<script src="../js/nav.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="../js/smooth-scrolling.js"></script>
+		<script src="../js/about-animations.js"></script>
+
 	</head>
 
 	<body>
+
 		<div id="header">
 			<div class="nav">
 				<a class="nav-logo-a" href="../index.html"><div class="nav-logo">
-					<img class="logo" src="../img/logo1.png">
+					<img id="logo" src="../img/logo1.png" onmouseover="a_animation()" onmouseout="a_back_to_logo()">
 					<p id="nav-logo-text">Endless</p>
 				</div></a>
 				<div class="nav-menu-wrapper">
@@ -26,11 +36,120 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="content-wrapper">
-			<div class="content">
+			<a id="c-arrow" href="#first"></a>
+			<div class="content-wbg0" id="zero">
+				<div class="video-container">			
+					<video autoplay="true" muted="true" src="../img/a-video.mp4" loop="true" type="video/mp4" class="video"></video>
+				</div>
+				<div class="overlay">
+					<div style=" margin: calc((400px - 31px)/2) auto; ">
+						<p class="f-text">About</p>
+					</div>
+				</div>
 			</div>
-			<div class="content">
+
+			<div class="content-nbg0" id="first">
+				<div class="item-container" id="animate1">
+					<div class="text-container">
+						<p id="sub-p-text" >Start by</p>
+						<p id="main-p-text" >Dicovering Endless</p>
+						<p id="des-text" >
+						We believe that gaming should not be expensive. That's why we came up with Endless. It allows you to generate video games with an endless number of possibilities at the low price of 20$ per month.
+						</p>
+					</div>
+					<div class="yt-video-container">
+						<video src="../img/intro-vid.mp4" type="video/mp4" autoplay="true" class="yt-video"></video>
+						<script type="text/javascript">$('.yt-video-container').tilt({ scale: 1.05, maxTilt: 3})</script>
+						<script type="text/javascript">
+							
+							$(".yt-video").click(function() {
+							  //console.log(this); 
+							  if (this.paused) {
+							    this.play();
+							  } else {
+							    this.pause();
+							  }
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-wbg1" id="second">
+				<div class="content" id="animate2">
+					<div style=" margin: calc((397px - 205px)/2) auto 0 auto; ">
+						<p id="sub-p-text" style="color: white; text-shadow: 2px 1px rgba(0, 0, 0, 0.45); text-align: center; margin: -55px auto 30px auto">Wanna know</p>
+						<p id="main-p-text" style="color: white; text-shadow: 2px 1px rgba(0, 0, 0, 0.45); text-align: center;">How it works?</p>
+						<p id="des-text" style="color: white; text-shadow: 2px 1px rgba(0, 0, 0, 0.45); text-align: center;">Endless generates new games based on your preferences. Want to customize it yourself? No problem! Endless allows you to select what you want out of your game.
+						</p>
+						<a href="../html/Pricing.html" class="p-link">Get started</a>
+					</div>
+				</div>	
+			</div>
+
+			<div class="content-nbg1" id="third">
+				<div class="item-container" id="animate3">
+					<div class="text-container">
+						<p id="sub-p-text" >Stay up to date with</p>
+						<p id="main-p-text" >Upcoming features</p>
+					</div>
+					<div class="timeline-container">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer" style="top:1754px; box-shadow: 0 1px 1px 3px rgba(0, 0, 0, 0.95);">
+				<div class="f-nav">
+					<a class="footer-logo-a" href="#"><div class="footer-logo">
+						<img id="logo" src="../img/logo1.png">
+						<p id="footer-logo-text">Copyright © Endless Inc. 2018</p>
+					</div></a>
+					<div class="footer-menu-wrapper">
+						<a class="footer-menu-a" id="a0" href="#">Terms and conditions</a>
+						<a class="footer-menu-a" id="a1" href="#">Privacy policy</a>
+						<a class="footer-menu-a" id="a2" href="https://www.instagram.com/marko_poulin/?hl=fr-ca"><img src="../img/instagram.png" style="height: 30px; width:30px; margin:-10px 2px;"></a>
+						<a class="footer-menu-a" id="a3" href="#"><img src="../img/fb.png" style="height: 30px; width:30px; margin:-10px 2px;" ></a>
+						<a class="footer-menu-a" id="a4" href="#"><img src="../img/twitter.png" style="height: 30px; width:30px; margin:-10px 2px;" ></a>
+					</div>
+				</div>
 			</div>
 		</div>
+		<script>
+			$('a[href*="#"]')
+	
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+		  
+		    if (
+		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		      // Figure out element to scroll to
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		      // Does a scroll target exist?
+		      if (target.length) {
+		        // Only prevent default if animation is actually gonna happen
+		        event.preventDefault();
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000, function() {
+		          // Callback after animation
+		          // Must change focus!
+		          var $target = $(target);
+		          $target.focus();
+		          if ($target.is(":focus")) { // Checking if the target was focused
+		            return false;
+		          } else {
+		            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+		            $target.focus(); // Set focus again
+		          };
+		        });
+		      }
+		    }
+		  });
+		</script>
 	</body>
 </html>

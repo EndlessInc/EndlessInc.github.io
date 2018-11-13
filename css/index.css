@@ -1,37 +1,43 @@
-
-.video-container{
+/*bg img*/
+.img-container{
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
   height: 100%; 
   overflow: hidden;
-}
-.bg-video{
-	min-width: 100%; 
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  z-index: 3;
+  background-color: #101010;
 
-  /* Center the video */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%); 
+
+
+}
+.bg-img{
+	position: relative;
+	height: calc(25% - 7.5px);
+	width: calc(20% - 7.5px);
+	margin: 2px;
+	filter:blur(5px) brightness(80%);
+	display: inline-block;
+	transition: 0.2s;
     
 }
+.bg-img:hover{
+	filter:none;
+	box-shadow:  20px 20px rgba(0, 0, 0, 0.45); 
+
+}
+/*overlay text*/
 .overlay-text{
 	position: absolute;
 	padding: 0;
 	margin: 0;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 1;
+	z-index: 4;
 	
 }
-
-
 .m-text-box{
 	border: 5px solid white;
 	margin-bottom: 50px;
@@ -51,8 +57,49 @@
 	text-shadow: 2px 5px rgba(0, 0, 0, 0.45);
 	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
-
-
+.p-link{
+	position: absolute;
+	top: 73%;
+	left: calc(50% - 120px);
+	z-index: 4;
+	border: 2px solid white;
+	padding: 20px 30px 20px 30px;
+	border-radius: 2px;
+	text-decoration: none;
+	color:white;
+	font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.45);
+    transition: 0.2s;
+}
+.p-link:hover{
+	box-shadow:  8px 8px 6px 0px rgba(0, 0, 0, 0.45);
+}
+.a-link{
+	margin: 70px auto;
+	display: block;
+	width:72px;
+	border: 2px solid white;
+	padding: 20px 30px 20px 30px;
+	border-radius: 2px;
+	text-decoration: none;
+	color:white;
+	font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.45);
+    transition: 0.2s;
+}
+.a-link:hover{
+	box-shadow:  8px 8px 5px 0px rgba(0, 0, 0, 0.45);
+}
 .content-wbg0{
 	-webkit-box-shadow:inset 0px 0px 0px 10px #f00;
     -moz-box-shadow:inset 0px 0px 0px 10px #f00;
@@ -69,10 +116,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     
+    
+}
+.content-wbg0:focus{
+	outline: none;
 }
 .content{
 	
-	width:90vw;
+	width:89vw;
 	height: 387px;
 	margin: calc(((566px - 387px)/2) - 5px)auto;
 	border: 5px solid white;
@@ -118,25 +169,71 @@
 	width: 100%;
 	background-color: white;
 }
-#down-arrow{
-  position: fixed;
-  background:white;
-  border-radius:50%;
-  width:65px;
-  height:65px;
-  top: 85%;
-  left:90%;
-  z-index: 2;
-  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.25);
-  background-size: 100%;
-  text-decoration: none;
-  border:none;
+/*arrow of video*/
+.f-arrow:before{
+  position: absolute;
+  left: 50%;
+}
+.f-arrow{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top:90%;
+  left:calc(50% - 30px);
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  background-color: transparent;
   cursor: pointer;
   outline: none;
+  z-index: 4;
+  }
 
-
+  
+.f-arrow:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+  }
+@keyframes arrow{
+  0%
+    {opacity: 0;}
+  20%
+    {opacity: 1;}
+  100%
+    {opacity: 0; transform: translate(-10px, -10px);}
 }
-
+/*arrow on the side*/
+#c-arrow{
+  position: fixed;
+  top: calc(100% - 50px);
+  left:97%;
+  z-index: 2;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.7s ease;
+ 
+}
 /*third box*/
 .content-wbg1{
 	top:calc(100vh + 943px);
@@ -155,13 +252,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.footer-content{
-	position: absolute;
-	top:calc(100vh + 1509px);
-	height: 100px;
-	width: 100%;
-	background-color:black;
-	
+.content-wbg1:focus{
+	outline: none;
 }
 /*text animation*/
 .verticalFlip{
@@ -197,10 +289,6 @@
 	-ms-animation-delay: 10s;
 	-webkit-animation-delay: 10s;
 }
-
-
-
-
 /*Vertical Flip Animation*/
 @-moz-keyframes vertical{
 	0% { opacity: 0; }

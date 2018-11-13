@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 
 	<head>
+		
+		<meta name="keywords" content="Dynamic game generator">
+		<meta name="description" content="SEG 2900 project">
 		<title>Endless | Home</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 		<link rel="icon" type="image/x-icon" href="./img/ico.ico" />
 		<link href="./css/navStyle.css" rel="stylesheet" type="text/css">
+		<link href="./css/footerStyle.css" rel="stylesheet" type="text/css">
 		<link href="./css/index.css" rel="stylesheet" type="text/css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 		<script src="./js/nav.js"></script>
 		<script src="./js/smooth-scrolling.js"></script>
-		<script src="./js/animations.js"></script>
+		<script src="./js/index-animations.js"></script>
+		
 		
 		
 	</head>
 
 	<body>
+
 		<div id="header">
 			<div class="nav">
 				<a class="nav-logo-a" href="index.html"><div class="nav-logo">
@@ -31,35 +38,58 @@
 			</div>
 		</div>
 		<div class="content-wrapper">
-			<div class="video-container">
-				<video autoplay muted loop="true" class="bg-video">
-	  				<source src="./img/video.mp4" type="video/mp4">
-				</video>
+			<a id="c-arrow" href="#first"></a>
+			<div class="top-container" id="zero">
+				<div class="img-container" >
+					<img src="./img/game_titles/1.jpg" class="bg-img">
+					<img src="./img/game_titles/2.jpg" class="bg-img">
+					<img src="./img/game_titles/3.jpg" class="bg-img">
+					<img src="./img/game_titles/4.jpg" class="bg-img">
+					<img src="./img/game_titles/5.jpg" class="bg-img">
+					<img src="./img/game_titles/6.jpg" class="bg-img">
+					<img src="./img/game_titles/7.jpg" class="bg-img">
+					<img src="./img/game_titles/8.jpg" class="bg-img">
+					<img src="./img/game_titles/9.jpg" class="bg-img">
+					<img src="./img/game_titles/10.jpg" class="bg-img">
+					<img src="./img/game_titles/11.jpg" class="bg-img">
+					<img src="./img/game_titles/12.jpg" class="bg-img">
+					<img src="./img/game_titles/13.jpg" class="bg-img">
+					<img src="./img/game_titles/14.jpg" class="bg-img">
+					<img src="./img/game_titles/15.jpg" class="bg-img">
+					<img src="./img/game_titles/16.jpg" class="bg-img">
+					<img src="./img/game_titles/17.jpg" class="bg-img">
+					<img src="./img/game_titles/18.jpg" class="bg-img">
+					<img src="./img/game_titles/19.jpg" class="bg-img">
+					<img src="./img/game_titles/20.jpg" class="bg-img">
+				</div>
 			</div>
-			<div class="overlay">
-				<dir class="overlay-text" id="animate0">
-					<div class="m-text-box"><p class="m-text">Endless</p></div>
-					<div class="verticalFlip" id="animate1">
-						<span>Endless possibilities</span>
-						<span>Breaking boundaries</span>
-						<span>The new fashion of gaming</span>
-    				</div>
-				</dir>
-			</div>
-			<button id="down-arrow"><img src="./img/down-arrow.png" id="arrow_img" style="width:50px; height: 50px; margin-bottom: -5px;"></button>
-			<div class="content-wbg0">
+				<div class="overlay">
+					<dir class="overlay-text" id="animate0">
+						<div class="m-text-box"><p class="m-text">Endless</p></div>
+						<div class="verticalFlip" id="animate1">
+							<span>Endless possibilities</span>
+							<span>Breaking boundaries</span>
+							<span>The new fashion of gaming</span>
+	    				</div>
+					</div>
+					<a href="./html/Pricing.html" class="p-link">Get started</a>
+					<a class="f-arrow" href="#first"></a>
+				</div>
+
+			<div class="content-wbg0" id="first">
 				<div class="content" id="animate2">
 					<div style=" margin: calc((397px - 205px)/2)auto; ">
 						<p id="sub-p-text">First thing first</p>
 						<p id="main-p-text">What is it?</p>
 						<p id="des-text">
-							Endless is an artificial intelligence that dynamically generates new games based on your favorite already existing games.
+							Endless is an artificial intelligence that dynamically generates new games based on your likings.
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="content-nbg">
-				<div class="content1" id="animate3">
+
+			<div class="content-nbg" id="second">
+				<div id="animate3">
 					<div style="margin: calc((377px - 184px)/2) 0 ;">
 						<p id="sub-p-text" style="color:black; text-shadow: none;">With endless possibilities comes</p>
 						<p id="main-p-text" style="color:black; text-shadow: none;">An ambitious mission</p>
@@ -69,18 +99,67 @@
 					</div>
 				</div>
 			</div>
-			<div class="content-wbg1">
+
+			<div class="content-wbg1" id="third">
 				<div class="content" id="animate4">
 					<div style=" margin: calc((397px - 205px)/2)auto; ">
 						<p id="main-p-text">Want to know more?</p>
 						<p id="sub-p-text">Follow this link :</p>
+						<a href="./html/About.html" class="a-link">About</a>
 					</div>
+
 				</div>	
 			</div>
+
 			<div class="footer">
-				<div class="footer-content">
+				<div class="f-nav">
+					<a class="footer-logo-a" href="#"><div class="footer-logo">
+						<img id="logo" src="./img/logo1.png">
+						<p id="footer-logo-text">Copyright © Endless Inc. 2018</p>
+					</div></a>
+					<div class="footer-menu-wrapper">
+						<a class="footer-menu-a" id="a0" href="#">Terms and conditions</a>
+						<a class="footer-menu-a" id="a1" href="#">Privacy policy</a>
+						<a class="footer-menu-a" id="a2" href="https://www.instagram.com/marko_poulin/?hl=fr-ca"><img src="./img/instagram.png" style="height: 30px; width:30px; margin:-10px 2px;"></a>
+						<a class="footer-menu-a" id="a3" href="#"><img src="./img/fb.png" style="height: 30px; width:30px; margin:-10px 2px;" ></a>
+						<a class="footer-menu-a" id="a4" href="#"><img src="./img/twitter.png" style="height: 30px; width:30px; margin:-10px 2px;" ></a>
+					</div>
 				</div>
 			</div>
 		</div>
+		<script>
+			$('a[href*="#"]')
+	
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+		  
+		    if (
+		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		      // Figure out element to scroll to
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		      // Does a scroll target exist?
+		      if (target.length) {
+		        // Only prevent default if animation is actually gonna happen
+		        event.preventDefault();
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000, function() {
+		          // Callback after animation
+		          // Must change focus!
+		          var $target = $(target);
+		          $target.focus();
+		          if ($target.is(":focus")) { // Checking if the target was focused
+		            return false;
+		          } else {
+		            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+		            $target.focus(); // Set focus again
+		          };
+		        });
+		      }
+		    }
+		  });
+		</script>
 	</body>
 </html>
