@@ -1,5 +1,8 @@
+body {background-image: url(page.jpg);}
+
 .content-wrapper{
   padding-top:65px;
+
 }
 .content{
   position:relative;
@@ -7,5 +10,29 @@
   width:100%;
   height: calc(100vh - 65px);
   background-color:  #f8f7f7;
+
 }
 /*add stuff*/
+
+#ta1 { position: relative;
+	   left:20px;}
+
+.bugs{
+	display:inline-block;
+}
+
+.questions{
+	display:inline-block;
+}
+
+ #qheading {font-family:montserrat;
+ }
+
+
+.join{	
+
+	display:inline-block;
+	
+
+
+}
