@@ -7,7 +7,15 @@ var up=false;
 
 
 $('#animate1').hide();
+$('.overlay-container').hide();
 
+$('.content-wrapper').on("click", "#choose-button", function(){
+  $('.overlay-container').fadeIn();
+});
+
+$('.content-wrapper').on("click", "#exit-button", function(){
+  $('.overlay-container').fadeOut();
+});
 
 window.addEventListener("scroll", function(){
 
