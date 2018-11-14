@@ -1,5 +1,5 @@
 //Code by Mark-Olvier Poulin
-//This code is for all the animations you see in the home page
+//This code is for all the animations you see in the pricing page
 
 $(document).ready(function(){
 var lastScrollTop = 0;

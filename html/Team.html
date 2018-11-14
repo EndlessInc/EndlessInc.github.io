@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129169611-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-129169611-1');
+		</script>
+		<meta name="keywords" content="Dynamic game generator">
+		<meta name="description" content="SEG 2900 project">
 		<title>Endless | Team</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 		<link rel="icon" type="image/x-icon" href="../img/ico.ico" />
 		<link href="../css/navStyle.css" rel="stylesheet" type="text/css">
 		<link href="../css/team.css" rel="stylesheet" type="text/css">
+		<link href="../css/footerStyle.css" rel="stylesheet" type="text/css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
 		<script src="../js/nav.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="../js/smooth-scrolling.js"></script>
+		<script src="../js/team-animations.js"></script>
 	</head>
 
 	<body>
@@ -27,7 +43,112 @@
 			</div>
 		</div>
 		<div class="content-wrapper">
-		
+			<a id="c-arrow" href="#first"></a>
+			<div class="content-wbg0" id="zero">
+				<div class="video-container">			
+					<video autoplay="true" muted="true" src="../img/t-video.mp4" loop="true" type="video/mp4" class="video"></video>
+				</div>
+				<div class="overlay">
+					<div style=" margin: calc((400px - 31px)/2) auto; ">
+						<p class="f-text">Team</p>
+					</div>
+				</div>
+			</div>
+			<div class="content-nbg" id="first">
+				<div id="team-container">
+					<div style="margin: calc((600px - 453px)/2) 0 ;">
+						<p id="sub-p-text" style="margin-left: -10px;">Meet the</p>
+						<p id="main-p-text" >Team</p>
+						<div class="m-group">
+							<div class="member-container">
+								<div class="hover1">
+									<img  class="member-img1" src="../img/team_photos/amin.jpg">
+									<div class="onover-des1">
+										<p class="onover-m-text1">Impressive communicator</p>
+										<a  class="onover-link1" href="https://www.linkedin.com/in/amin-dhouib-b50847170/">LinkedIn</a>
+									</div>
+								</div>
+								<div>
+									<p id="main-m-text">Amin Dhouib</p>
+									<p id="sub-m-text" >Co-founder</p>
+								</div>
+							</div>
+							<div class="member-container">
+								<img  class="member-img2" src="../img/team_photos/hrithik.jpg">
+								<div class="onover-des2">
+									<p class="onover-m-text2">Logic genius</p>
+									<a  class="onover-link2" href="https://www.linkedin.com/in/hrithik-shah/">LinkedIn</a>
+								</div>
+								<div>
+									<p id="main-m-text">Hrithik Shah</p>
+									<p id="sub-m-text" >Co-founder</p>
+								</div>
+							</div>
+							<div class="member-container">
+								<img  class="member-img3" src="../img/team_photos/salima.jpg">
+								<div class="onover-des3">
+									<p class="onover-m-text3">Tech leader</p>
+									<a  class="onover-link3" href="https://www.linkedin.com/in/salima-hassan-086522174/">LinkedIn</a>
+								</div>
+								<div>
+									<p id="main-m-text" >Salima Hassan</p>
+									<p id="sub-m-text" >Co-founder</p>
+								</div>
+							</div>
+							<div class="member-container">
+								<img  class="member-img4" src="../img/team_photos/ash.jpg">
+								<div class="onover-des4">
+									<p class="onover-m-text4">Business savy</p>
+									<a  class="onover-link4" href="https://www.linkedin.com/in/arunasva-bhuyan-95153a174/">LinkedIn</a>
+								</div>
+								<div>
+									<p id="main-m-text" >Arunasva Bhuyan</p>
+									<p id="sub-m-text" >Co-founder</p>	
+								</div>
+							</div>
+							<div class="member-container">
+								<img  class="member-img5" src="../img/team_photos/mark.png">
+								<div class="onover-des5">
+									<p class="onover-m-text5">Coding mad lad</p>
+									<a  class="onover-link5" href="https://www.linkedin.com/in/mark-olivier-poulin-913aaa170/">LinkedIn</a>
+								</div>
+								<div>
+									<p id="main-m-text" >Mark-Olivier Poulin</p>
+									<p id="sub-m-text" >Co-founder</p>
+								</div>
+							</div>
+						</div>
+						<script type="text/javascript">
+							$('.member-container').tilt({ scale: 1.05, maxTilt: 0.8});
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="content-wbg1" id="second">
+				<div class="content" id="animate1">
+					<div style=" margin: calc((300px - 136px)/2) auto 0 auto; ">
+						<p id="sub-p-text" style="color: white; text-shadow: 2px 1px rgba(0, 0, 0, 0.45);">Want to</p>
+						<p id="main-p-text" style="color: white; text-shadow: 2px 1px rgba(0, 0, 0, 0.45);">Join the team?</p>
+						<a href="../html/Contact.html" class="apply-link">Apply</a>
+					</div>
+				</div>	
+			</div>
+			<div class="footer" style="top:1400px;">
+				<div class="f-nav">
+					<a class="footer-logo-a" href="#"><div class="footer-logo">
+						<img id="logo" src="../img/logo1.png">
+						<p id="footer-logo-text">Copyright © Endless Inc. 2018</p>
+					</div></a>
+					<div class="footer-menu-wrapper">
+						<a class="footer-menu-a" id="a0" href="#">Terms and conditions</a>
+						<a class="footer-menu-a" id="a1" href="#">Privacy policy</a>
+						<a class="footer-menu-a" id="a2" href="https://www.instagram.com/marko_poulin/?hl=fr-ca"><img src="../img/instagram.png" style="height: 30px; width:30px; margin:-10px 2px;"></a>
+						<a class="footer-menu-a" id="a3" href="#"><img src="../img/fb.png" style="height: 30px; width:30px; margin:-10px 2px;" ></a>
+						<a class="footer-menu-a" id="a4" href="#"><img src="../img/twitter.png" style="height: 30px; width:30px; margin:-10px 2px;" ></a>
+					</div>
+				</div>
+			</div>
 		</div>
+		<script src="../js/smooth-transitions.js"></script>
 	</body>
 </html>

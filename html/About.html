@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 
 	<head>
-		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129169611-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-129169611-1');
+		</script>
 		<meta name="keywords" content="Dynamic game generator">
 		<meta name="description" content="SEG 2900 project">
 		<title>Endless | About</title>
@@ -41,7 +49,7 @@
 			<a id="c-arrow" href="#first"></a>
 			<div class="content-wbg0" id="zero">
 				<div class="video-container">			
-					<video autoplay="true" muted="true" src="../img/a-video.mp4" loop="true" type="video/mp4" class="video"></video>
+					<video muted="true" src="../img/a-video.mp4" loop="true" type="video/mp4" class="video"></video>
 				</div>
 				<div class="overlay">
 					<div style=" margin: calc((400px - 31px)/2) auto; ">
@@ -117,39 +125,6 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			$('a[href*="#"]')
-	
-		  .not('[href="#"]')
-		  .not('[href="#0"]')
-		  .click(function(event) {
-		  
-		    if (
-		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-		      // Figure out element to scroll to
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		      // Does a scroll target exist?
-		      if (target.length) {
-		        // Only prevent default if animation is actually gonna happen
-		        event.preventDefault();
-		        $('html, body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000, function() {
-		          // Callback after animation
-		          // Must change focus!
-		          var $target = $(target);
-		          $target.focus();
-		          if ($target.is(":focus")) { // Checking if the target was focused
-		            return false;
-		          } else {
-		            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-		            $target.focus(); // Set focus again
-		          };
-		        });
-		      }
-		    }
-		  });
-		</script>
+		<script src="../js/smooth-transitions.js"></script>
 	</body>
 </html>
