@@ -9,7 +9,11 @@
 $(document).ready(function(){
 
 
+//boolean variable that checks if the program is indeed being runned on a mobile
 var isMobile;
+    
+//Sets isMobile to true if it is on a mobile
+//Else it will set it to false.
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
     isMobile = true;
     $("html").addClass("mobile");
@@ -18,6 +22,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
     $("html").addClass("no-mobile");
 }
 
+//If it isn't a mobile, the visuals will be work well for a non mobile user
+//that is navigating the website.
 if (!isMobile) {
     (function() {
 
