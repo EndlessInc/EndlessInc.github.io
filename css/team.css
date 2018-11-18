@@ -37,7 +37,7 @@
 	padding: 0;
 	margin: 0;
 	top: 50%;
-	left: 51%;
+	left: calc(50% + 12px);
 	transform: translate(-50%, -50%);
 	
 
@@ -80,15 +80,36 @@
 	border:5px solid white;
 
 }
-.member-img1, .member-img2, .member-img3, .member-img4, .member-img5{
+.hover1, .hover2, .hover3, .hover4, .hover5{
+	width: 250px;
+	height: 250px;
+}
+#member-img1{
 	transition: filter 0.2s;
 	width: 250px;
 	height: 250px;
 }
-.member-img1:hover, .member-img2:hover, .member-img3:hover, .member-img4:hover, .member-img5:hover{
-	filter:brightness(50%) blur(2px) ;
-	
+#member-img2{
+	transition: filter 0.2s;
+	width: 250px;
+	height: 250px;
 }
+#member-img3{
+	transition: filter 0.2s;
+	width: 250px;
+	height: 250px;
+}
+#member-img4{
+	transition: filter 0.2s;
+	width: 250px;
+	height: 250px;
+}
+#member-img5{
+	transition: filter 0.2s;
+	width: 250px;
+	height: 250px;
+}
+
 #sub-p-text{
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;

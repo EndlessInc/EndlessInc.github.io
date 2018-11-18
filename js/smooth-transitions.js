@@ -1,3 +1,4 @@
+//copied code
 $('a[href*="#"]')
 	
 		  .not('[href="#"]')

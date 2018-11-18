@@ -4,6 +4,11 @@
 $(document).ready(function(){
 var lastScrollTop = 0;
 var up=false;
+var img_1= document.getElementById("member-img1");
+var img_2= document.getElementById("member-img2");
+var img_3= document.getElementById("member-img3");
+var img_4= document.getElementById("member-img4");
+var img_5= document.getElementById("member-img5");
 
 
 $('#animate1').hide();
@@ -13,24 +18,44 @@ $('.onover-des3').hide();
 $('.onover-des4').hide();
 $('.onover-des5').hide();
 
-$('.member-img1, .onover-link1, .onover-m-text1').hover(function(){
+$('.hover1').hover(function(){
   $('.onover-des1').fadeToggle();
+  img_1.style.filter="brightness(50%) blur(2px)";
+});
+$('.hover1').mouseleave(function(){
+  img_1.style.filter="none";
 });
 
-$('.member-img2, .onover-link2, .onover-m-text2').hover(function(){
+$('.hover2').hover(function(){
   $('.onover-des2').fadeToggle();
+  img_2.style.filter="brightness(50%) blur(2px)";
+});
+$('.hover2').mouseleave(function(){
+  img_2.style.filter="none";
 });
 
-$('.member-img3, .onover-link3, .onover-m-text3').hover(function(){
+$('.hover3').hover(function(){
   $('.onover-des3').fadeToggle();
+  img_3.style.filter="brightness(50%) blur(2px)";
+});
+$('.hover3').mouseleave(function(){
+  img_3.style.filter="none";
 });
 
-$('.member-img4, .onover-link4, .onover-m-text4').hover(function(){
+$('.hover4').hover(function(){
   $('.onover-des4').fadeToggle();
+  img_4.style.filter="brightness(50%) blur(2px)";
+});
+$('.hover4').mouseleave(function(){
+  img_4.style.filter="none";
 });
 
-$('.member-img5, .onover-link5, .onover-m-text5').hover(function(){
+$('.hover5').hover(function(){
   $('.onover-des5').fadeToggle();
+  img_5.style.filter="brightness(50%) blur(2px)";
+});
+$('.hover5').mouseleave(function(){
+  img_5.style.filter="none";
 });
 
 
