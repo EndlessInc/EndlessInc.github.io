@@ -10,6 +10,10 @@
 
 		  gtag('config', 'UA-129169611-1');
 		</script>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Dynamic game generator">
+		<meta name="description" content="SEG 2900 project">
 		<title>Endless | Contact</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 		<link rel="icon" type="image/x-icon" href="../img/ico.ico" />
@@ -17,8 +21,11 @@
 		<link href="../css/footerStyle.css" rel="stylesheet" type="text/css">
 		<link href="../css/contact.css" rel="stylesheet" type="text/css">
 
-		<script src="../js/nav.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script src="../js/nav.js"></script>
+		<script src="../js/smooth-scrolling.js"></script>
+		<script src="../js/contact-animations.js"></script>
 	</head>
 
 	<body>
@@ -49,11 +56,31 @@
 				</div>
 			</div>
 			<div class="content-nbg0" id="first">
-				
+				<div class="form-container">
+					<p id="sub-p-text" style="margin-left: -10px;">Have questions?</p>
+					<p id="main-p-text" >Let us help you</p>
+					<div class="contact-form">
+						<form>
+						    <label for="name">Name*</label>
+						    <input type="text" class="name" id="name" placeholder="Name">
+
+						    <label for="email">Email*</label>
+						    <input type="email" class="email" id="email" placeholder="Email">
+
+						    <label for="subject">Subject*</label>
+						    <input type="text" class="subject" id="subject" placeholder="Subject">
+
+						    <label for="message">Message*</label>
+						    <textarea type="text" class="message" id="message" style="height:100px"></textarea>
+
+						    <input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
 			</div>
 			<div class="content-wbg1" id="first">
 				<div id="map">
-					
+					<!--The map is not loading on any localhost because the google map API key is restricted to https://endlessinc.github.io to view the complete contact page go to https://endlessinc.github.io-->
 				</div>
 				<script>
 				function initMap(){
@@ -73,7 +100,7 @@
     				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Dv5UpnQShhx79CP0_fATMAA54d_b_SI&callback=initMap">
   				</script>
 			</div>
-			<div class="footer" style="top:1300px; box-shadow: 0 1px 1px 3px rgba(0, 0, 0, 0.95);">
+			<div class="footer" style="top:1420px; box-shadow: 0 1px 1px 3px rgba(0, 0, 0, 0.95);">
 				<div class="f-nav">
 					<a class="footer-logo-a" href="#"><div class="footer-logo">
 						<img id="logo" src="../img/logo1.png">
@@ -89,5 +116,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="../js/smooth-transitions.js"></script>
 	</body>
 </html>
