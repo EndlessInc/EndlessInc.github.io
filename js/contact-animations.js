@@ -5,7 +5,7 @@ $(document).ready(function(){
 var lastScrollTop = 0;
 var up=false;
 
-$('#animate1').hide();
+$('#map').hide();
 
 
 window.addEventListener("scroll", function(){
@@ -27,7 +27,7 @@ window.addEventListener("scroll", function(){
        console.log(ypos);
      }
   
-  if (ypos>=0 && ypos<250){
+  if (ypos>=0 && ypos<300){
 
       c_arrow.style.borderBottom="2px #000000 solid";
       c_arrow.style.borderRight="2px #000000 solid";
@@ -54,24 +54,24 @@ window.addEventListener("scroll", function(){
     up=false;
   }
 
-  if(ypos >= 0 && ypos <= 370 && up==false){
+  if(ypos >= 0 && ypos < 400 && up==false){
     c_arrow.setAttribute("href", "#first"); 
   }
-  if(ypos >= 0 && ypos <= 492 && up==true){
+  if(ypos >= 0 && ypos <= 430 && up==true){
     c_arrow.setAttribute("href", "#zero");
   }
-  if(ypos >= 370 && ypos <= 620 && up==false){
+  if(ypos >= 399 && ypos <= 650 && up==false){
     c_arrow.setAttribute("href", "#second");
   }
-  if(ypos > 492 && ypos <= 620 && up==true){
+  if(ypos > 430 && ypos <= 650 && up==true){
     c_arrow.setAttribute("href", "#first");
   }
 
 
   if (st > lastScrollTop || st < lastScrollTop){
         //scroll detection 
-         if(ypos >= 350){
-          $('#animate1').fadeIn();
+         if(ypos >= 410){
+          $('#map').fadeIn();
         }
     }
 

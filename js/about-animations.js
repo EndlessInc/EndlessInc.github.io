@@ -10,13 +10,6 @@ var up=false;
 $('#animate2').hide();
 $('#animate3').hide();
 
-function left_arrow(){
-
-}
-function right_arrow(){
-  
-}
-
 
 
 window.addEventListener("scroll", function(){
