@@ -200,7 +200,7 @@
 .timeline-container{
 	width:900px;
 	height:400px;
-	margin: auto auto;
+	margin: auto 0 auto 50px;
 }
 .up-coming-img{
 	height: 400px;
