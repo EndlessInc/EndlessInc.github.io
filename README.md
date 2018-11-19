@@ -3,7 +3,7 @@ SEG project where students create dynamic game building software.
 
 Company Description:
 
-The mission of this company is to eradicate gamer boredom. Our product is an Atificial Intelligence that dynamically builds games based on a certain criteria. Games for You, Made for You
+The mission of this company is to eradicate gamer boredom. Our product is an Artificial Intelligence that dynamically builds games based on a certain criteria. Games for You, Made for You
 
 
 Contributor #1: Hrithik Shah username: CoderHahs - 300069290
