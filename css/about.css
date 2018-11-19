@@ -198,7 +198,11 @@
 }
 /*Slideshow*/
 .timeline-container{
-	width:500px;
+	width:900px;
 	height:400px;
-	margin: auto 0;
+	margin: auto auto;
+}
+.up-coming-img{
+	height: 400px;
+	width: 900x;
 }
